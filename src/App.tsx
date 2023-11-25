@@ -6,8 +6,8 @@ import Button from './components/button/button';
 function App() {
   return (
     <>
-    <List/>
-    <Button/>
+    <List onClick={()=>{console.log('clicked list')}}/>
+    <Button onClick={()=>console.log('clicked button')}>My Button</Button>
     </>
   );
 }
