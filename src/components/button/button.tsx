@@ -7,6 +7,7 @@ interface Props
 function Button({children,color='danger',onClick}:Props)
 {
     return <button type="button" className={'btn btn-'+color} onClick={onClick}>{children}</button>
+    
 }
 
 export default Button
