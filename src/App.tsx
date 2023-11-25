@@ -7,7 +7,7 @@ function App() {
   return (
     <>
     <List onClick={()=>{console.log('clicked list')}}/>
-    <Button onClick={()=>console.log('clicked button')}>My Button</Button>
+    <Button color='primary' onClick={()=>console.log('clicked button')}>My Button</Button>
     </>
   );
 }

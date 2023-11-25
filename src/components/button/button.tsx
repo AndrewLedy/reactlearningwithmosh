@@ -1,11 +1,12 @@
 interface Props
 {
     children : string
+    color?: 'primary' | 'secondary' | 'danger'
     onClick():void
 }
-function Button({children,onClick}:Props)
+function Button({children,color='danger',onClick}:Props)
 {
-    return <button type="button" className="btn btn-primary" onClick={onClick}>{children}</button>
+    return <button type="button" className={'btn btn-'+color} onClick={onClick}>{children}</button>
 }
 
 export default Button
